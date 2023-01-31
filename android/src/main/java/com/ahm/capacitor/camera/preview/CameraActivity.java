@@ -175,53 +175,53 @@ public class CameraActivity extends Fragment {
                             public boolean onTouch(View v, MotionEvent event) {
                                 FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) frameContainerLayout.getLayoutParams();
 
-                                boolean isSingleTapTouch = gestureDetector.onTouchEvent(event);
-                                int action = event.getAction();
-                                int eventCount = event.getPointerCount();
-                                Log.d(TAG, "onTouch event, action, count: " + event + ", " + action + ", " + eventCount);
-                                if (eventCount > 1) {
-                                    // handle multi-touch events
-                                    Camera.Parameters params = mCamera.getParameters();
-                                    if (action == MotionEvent.ACTION_POINTER_DOWN) {
-                                        mDist = getFingerSpacing(event);
-                                    } else if (action == MotionEvent.ACTION_MOVE && params.isZoomSupported()) {
-                                        handleZoom(event, params);
-                                    }
-                                } else {
-                                    if (action != MotionEvent.ACTION_MOVE && isSingleTapTouch) {
-                                        if (tapToTakePicture && tapToFocus) {
-                                            setFocusArea(
-                                                (int) event.getX(0),
-                                                (int) event.getY(0),
-                                                new Camera.AutoFocusCallback() {
-                                                    public void onAutoFocus(boolean success, Camera camera) {
-                                                        if (success) {
-                                                            takePicture(0, 0, 85);
-                                                        } else {
-                                                            Log.d(TAG, "onTouch:" + " setFocusArea() did not suceed");
-                                                        }
-                                                    }
-                                                }
-                                            );
-                                        } else if (tapToTakePicture) {
-                                            takePicture(0, 0, 85);
-                                        } else if (tapToFocus) {
-                                            setFocusArea(
-                                                (int) event.getX(0),
-                                                (int) event.getY(0),
-                                                new Camera.AutoFocusCallback() {
-                                                    public void onAutoFocus(boolean success, Camera camera) {
-                                                        if (success) {
-                                                            // A callback to JS might make sense here.
-                                                        } else {
-                                                            Log.d(TAG, "onTouch:" + " setFocusArea() did not suceed");
-                                                        }
-                                                    }
-                                                }
-                                            );
+                                    boolean isSingleTapTouch = gestureDetector.onTouchEvent(event);
+                                    int action = event.getAction();
+                                    int eventCount = event.getPointerCount();
+                                    Log.d(TAG, "onTouch event, action, count: " + event + ", " + action + ", " + eventCount);
+                                    if (eventCount > 1) {
+                                        // handle multi-touch events
+                                        Camera.Parameters params = mCamera.getParameters();
+                                        if (action == MotionEvent.ACTION_POINTER_DOWN) {
+                                            mDist = getFingerSpacing(event);
+                                        } else if (action == MotionEvent.ACTION_MOVE && params.isZoomSupported()) {
+                                            handleZoom(event, params);
                                         }
-                                        return true;
                                     } else {
+                                        if (action != MotionEvent.ACTION_MOVE && isSingleTapTouch) {
+                                            if (tapToTakePicture && tapToFocus) {
+                                                setFocusArea(
+                                                    (int) event.getX(0),
+                                                    (int) event.getY(0),
+                                                    new Camera.AutoFocusCallback() {
+                                                        public void onAutoFocus(boolean success, Camera camera) {
+                                                            if (success) {
+                                                                takePicture(0, 0, 85, 0);
+                                                            } else {
+                                                                Log.d(TAG, "onTouch:" + " setFocusArea() did not suceed");
+                                                            }
+                                                        }
+                                                    }
+                                                );
+                                            } else if (tapToTakePicture) {
+                                                takePicture(0, 0, 85, 0);
+                                            } else if (tapToFocus) {
+                                                setFocusArea(
+                                                    (int) event.getX(0),
+                                                    (int) event.getY(0),
+                                                    new Camera.AutoFocusCallback() {
+                                                        public void onAutoFocus(boolean success, Camera camera) {
+                                                            if (success) {
+                                                                // A callback to JS might make sense here.
+                                                            } else {
+                                                                Log.d(TAG, "onTouch:" + " setFocusArea() did not suceed");
+                                                            }
+                                                        }
+                                                    }
+                                                );
+                                            }
+                                            return true;
+                                        } else {
                                         if (dragEnabled) {
                                             int x;
                                             int y;
@@ -781,8 +781,8 @@ public class CameraActivity extends Fragment {
         );
     }
 
-    public void takePicture(final int width, final int height, final int quality) {
-        Log.d(TAG, "CameraPreview takePicture width: " + width + ", height: " + height + ", quality: " + quality);
+   public void takePicture(final int width, final int height, final int quality, final int rotationFrontCamera) {
+        Log.d(TAG, "CameraPreview takePicture width: " + width + ", height: " + height + ", quality: " + quality + ", rotationFrontCamera: " + rotationFrontCamera);
 
         if (mPreview != null) {
             if (!canTakePicture) {
@@ -812,7 +812,7 @@ public class CameraActivity extends Fragment {
                         int degrees = 0;
                         switch (rotation) {
                             case Surface.ROTATION_0:
-                                degrees = 0;
+                                degrees = rotationFrontCamera;
                                 break;
                             case Surface.ROTATION_90:
                                 degrees = 180;
