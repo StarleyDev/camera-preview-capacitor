@@ -1,5 +1,10 @@
 # Changelog
 
+## [4.0.1](https://github.com/StarleyDev/camera-preview/compare/v4.0.0...v4.0.1) (2023-01-31)
+
+### Changed
+* Add rotationFrontCamera for rotation after take a picture - By Starley Cazorla.
+
 ## [4.0.0](https://github.com/capacitor-community/camera-preview/compare/v3.1.2...v4.0.0) (2022-09-20)
 
 ### Changed
