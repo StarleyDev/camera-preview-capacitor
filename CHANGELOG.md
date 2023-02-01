@@ -1,6 +1,6 @@
 # Changelog
 
-## [4.0.1](https://github.com/StarleyDev/camera-preview/compare/v4.0.0...v4.0.1) (2023-01-31)
+## [4.0.4](https://github.com/StarleyDev/camera-preview/compare/v4.0.0...v4.0.4) (2023-01-31)
 
 ### Changed
 * Add rotationFrontCamera for rotation after take a picture - By Starley Cazorla.
