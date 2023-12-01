@@ -4,6 +4,9 @@
 
 The plugin has been updated to Capacitor 5, it's not compatible with older versions of Capacitor, see README.md for information about what versions of the plugin to use in previous Capacitor releases.
 
+### Changed
+* Add rotationFrontCamera for rotation after take a picture - By Starley Cazorla.
+
 ### Fixes
 
 * [fix(web): Remove deprecated registerWebPlugin (](https://github.com/capacitor-community/camera-preview/commit/1bcb0e38cb63aafe0ba56e67e89ee09ab4582468)https://github.com/capacitor-community/camera-preview/pull/288[)](https://github.com/capacitor-community/camera-preview/commit/1bcb0e38cb63aafe0ba56e67e89ee09ab4582468)
@@ -16,6 +19,10 @@ The plugin has been updated to Capacitor 5, it's not compatible with older versi
 * [feat: add commonjs output format (](https://github.com/capacitor-community/camera-preview/commit/a88351453b4298278156751df8fb0fa9807d5e4d)https://github.com/capacitor-community/camera-preview/pull/287[)](https://github.com/capacitor-community/camera-preview/commit/a88351453b4298278156751df8fb0fa9807d5e4d)
 
 
+## [4.0.4](https://github.com/StarleyDev/camera-preview/compare/v4.0.0...v4.0.4) (2023-01-31)
+
+### Changed
+* Add rotationFrontCamera for rotation after take a picture - By Starley Cazorla.
 
 ## [4.0.0](https://github.com/capacitor-community/camera-preview/compare/v3.1.2...v4.0.0) (2022-09-20)
 
@@ -24,7 +31,7 @@ The plugin has been updated to Capacitor 5, it's not compatible with older versi
 
 ## [3.1.2](https://github.com/capacitor-community/camera-preview/compare/v3.1.1...v3.1.2) (2022-08-29)
 
-### Fixed 
+### Fixed
 * [Android] preview not resized and displayed correctly when orientation changes by @ryaa in https://github.com/capacitor-community/camera-preview/pull/238
 
 ## [3.1.1](https://github.com/capacitor-community/camera-preview/compare/v3.1.0...v3.1.1) (2022-08-13)
@@ -51,7 +58,7 @@ The plugin has been updated to Capacitor 5, it's not compatible with older versi
 ### Changed
 
 * chore(deps): bump async from 2.6.3 to 2.6.4 in /demo ([#217](https://github.com/capacitor-community/camera-preview/pull/217))
-* chore(deps): bump minimist from 1.2.5 to 1.2.6 ([#225](https://github.com/capacitor-community/camera-preview/pull/225)) 
+* chore(deps): bump minimist from 1.2.5 to 1.2.6 ([#225](https://github.com/capacitor-community/camera-preview/pull/225))
 
 ### Fixed
 
@@ -75,6 +82,6 @@ The version number has increased in line with Semver as there's one backwards-in
 * Add pinch and zoom support on iOS. Thank you to contributors @luckyboykg and @guischulz! ([#204](https://github.com/capacitor-community/camera-preview/pull/204))
 
 ### Documentation
-* Add info on styling when the camera preview doesn't display because it's behind elements. Thank you to contributor @dhayanth-dharma! 
+* Add info on styling when the camera preview doesn't display because it's behind elements. Thank you to contributor @dhayanth-dharma!
 * Fix deprecated imports in README. Thank you to contributor @koen20!
 * Document the iOS-only `enableHighResolution` option. Thank you to contributor @bfinleyui! ([#207](https://github.com/capacitor-community/camera-preview/pull/207))
