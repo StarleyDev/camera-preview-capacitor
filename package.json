@@ -1,6 +1,6 @@
 {
   "name": "@starley/camera-preview-capacitor",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "Camera preview capacitor",
   "main": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -53,7 +53,7 @@
     "dist/",
     "ios/",
     "android/",
-    "CapacitorCommunityCameraPreview.podspec"
+    "StarleyCameraPreviewCapacitor.podspec"
   ],
   "keywords": [
     "capacitor",
