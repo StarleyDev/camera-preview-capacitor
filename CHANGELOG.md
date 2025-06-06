@@ -1,5 +1,12 @@
 # Changelog
 
+## [v6.0.0](https://github.com/capacitor-community/camera-preview/compare/v5.0.0...v6.0.0) (2024-05-06)
+
+### Chores
+
+- feat: Capacitor 6 Support ([#332](https://github.com/capacitor-community/camera-preview/pull/332)), ([0356db0](https://github.com/capacitor-community/camera-preview/commit/0356db04fb9dcc7f257028ca1b5134a7a21c6dd3)), closes [#330](https://github.com/capacitor-community/camera-preview/issues/330)
+
+## [5.0.0](https://github.com/capacitor-community/camera-preview/compare/v4.0.0...v5.0.0) (2022-06-09)
 ## [5.0.1](https://github.com/capacitor-community/camera-preview/compare/v4.0.0...v4.0.0) (2022-06-09)
 
 The plugin has been updated to Capacitor 5, it's not compatible with older versions of Capacitor, see README.md for information about what versions of the plugin to use in previous Capacitor releases.
@@ -97,7 +104,6 @@ The version number has increased in line with Semver as there's one backwards-in
 - Add pinch and zoom support on iOS. Thank you to contributors @luckyboykg and @guischulz! ([#204](https://github.com/capacitor-community/camera-preview/pull/204))
 
 ### Documentation
-
-- Add info on styling when the camera preview doesn't display because it's behind elements. Thank you to contributor @dhayanth-dharma!
-- Fix deprecated imports in README. Thank you to contributor @koen20!
-- Document the iOS-only `enableHighResolution` option. Thank you to contributor @bfinleyui! ([#207](https://github.com/capacitor-community/camera-preview/pull/207))
+* Add info on styling when the camera preview doesn't display because it's behind elements. Thank you to contributor @dhayanth-dharma!
+* Fix deprecated imports in README. Thank you to contributor @koen20!
+* Document the iOS-only `enableHighResolution` option. Thank you to contributor @bfinleyui! ([#207](https://github.com/capacitor-community/camera-preview/pull/207))
