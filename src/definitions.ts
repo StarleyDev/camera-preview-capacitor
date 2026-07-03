@@ -46,7 +46,9 @@ export interface CameraPreviewPictureOptions {
     quality?: number;
     /**
      * Define the rotation of img default is 0
+     * 
      * @author Starley Cazorla
+     * 
      * Acceptable values 0, 90, 180, 360
      */
     rotationFrontCamera?: number;

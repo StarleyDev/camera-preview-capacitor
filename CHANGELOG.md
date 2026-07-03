@@ -98,9 +98,11 @@ The plugin has been updated to Capacitor 5, it's not compatible with older versi
 - [feat: add commonjs output format (](https://github.com/capacitor-community/camera-preview/commit/a88351453b4298278156751df8fb0fa9807d5e4d)https://github.com/capacitor-community/camera-preview/pull/287[)](https://github.com/capacitor-community/camera-preview/commit/a88351453b4298278156751df8fb0fa9807d5e4d)
 
 ## [4.0.1](https://github.com/StarleyDev/camera-preview/compare/v4.0.0...v4.0.1) (2023-01-31)
+## [4.0.4](https://github.com/StarleyDev/camera-preview/compare/v4.0.0...v4.0.4) (2023-01-31)
 
 ### Changed
-* Add rotationFrontCamera for rotation after take a picture - By Starley Cazorla.
+
+- Add rotationFrontCamera for rotation after take a picture - By Starley Cazorla.
 
 ## [4.0.0](https://github.com/capacitor-community/camera-preview/compare/v3.1.2...v4.0.0) (2022-09-20)
 
