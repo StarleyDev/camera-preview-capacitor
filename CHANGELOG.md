@@ -1,5 +1,32 @@
 # Changelog
 
+## [v7.0.1](https://github.com/capacitor-community/camera-preview/compare/v7.0.0...v7.0.1) (2025-04-03)
+
+### Chores
+
+- fix: Remove unused files from res folde ([#366](https://github.com/capacitor-community/camera-preview/pull/373)), ([addcf31](https://github.com/capacitor-community/camera-preview/commit/addcf31bb72551d3e641aa90f9b03770691f93b7))
+- updated plugin and the example application dependencies
+
+## [v7.0.0](https://github.com/capacitor-community/camera-preview/compare/v6.0.1...v7.0.0) (2025-02-17)
+
+### Chores
+
+- feat: Capacitor 7 Support ([#366](https://github.com/capacitor-community/camera-preview/pull/366)), ([cd769ec](https://github.com/capacitor-community/camera-preview/commit/cd769eca975e637fee2f84414a8e0fe4627330b1)), closes [#362](https://github.com/capacitor-community/camera-preview/issues/362) and [#367](https://github.com/capacitor-community/camera-preview/issues/367)
+
+## [v6.0.1](https://github.com/capacitor-community/camera-preview/compare/v6.0.0...v6.0.1) (2024-12-17)
+
+### BREAKING CHANGES
+
+- The minimal required Node version is now 18.0.0
+
+### Features
+
+- [FEATURE] add feature to check or detect when camera has been started ([#357](https://github.com/capacitor-community/camera-preview/pull/357)), ([f958173](https://github.com/capacitor-community/camera-preview/commit/f95817359906657d005e47c21b98006829206a3f)), closes [#356](https://github.com/capacitor-community/camera-preview/issues/356)
+
+### Chores
+
+- chore: update dependencies and eslint fixes ([#358](https://github.com/capacitor-community/camera-preview/pull/358)), ([871b115](https://github.com/capacitor-community/camera-preview/commit/871b115652ed9ebc8f9849693d7d11c2bab04c3b))
+
 ## [v6.0.0](https://github.com/capacitor-community/camera-preview/compare/v5.0.0...v6.0.0) (2024-05-06)
 
 ### Chores
